@@ -276,5 +276,119 @@ footer{
 }
 
 @media ( max-width: 780px) {
+    /* ===== NAVBAR ===== */
+
+  .nav-link {
+
+    font-size: 16px;
+
+  }
+
+  .search-bar {
+
+    margin-right: 0;
+
+    width: 100%;
+
+  }
+
+  .cart-wrapper {
+
+    position: static;
+
+    margin-top: 10px;
+
+  }
+
+  /* ===== HERO ===== */
+
+  .main {
+
+    padding: 80px 20px;
+
+  }
+
+  .main h1 {
+
+    font-size: 36px;
+
+  }
+
+  .main p {
+
+    font-size: 18px;
+
+  }
+
+  /* ===== GRIDS (Why / Design) ===== */
+
+  .choose-grid,
+
+  .design {
+
+    grid-template-columns: 1fr;
+
+    border-radius: 0;
+
+  }
+
+  .choose-text h2,
+
+  .design-text h2 {
+
+    font-size: 26px;
+
+  }
+
+  .choose-text p,
+
+  .design-text p {
+
+    font-size: 16px;
+
+    padding: 0 20px;
+
+  }
+
+  /* ===== WHY SECTION ===== */
+
+  .Why {
+
+    padding: 30px 20px;
+
+  }
+
+  /* ===== CONTACT ===== */
+
+  .contact {
+
+    margin: 80px 20px;
+
+  }
+
+  .inputs form {
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+  }
+
+  input[type="submit"] {
+
+    width: 100%;
+
+    padding: 12px;
+
+  }
+
+  /* ===== FOOTER ===== */
+
+  footer {
+
+    font-size: 13px;
+
+    padding: 25px 15px; 
     
+}
 }
