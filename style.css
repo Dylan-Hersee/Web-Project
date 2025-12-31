@@ -1,6 +1,6 @@
 /*Navbar*/
 body{
-    background: #faf9f7;
+    background-color: #faf9f7;
 }
 .home{
     background-image: url("Web\ Page\ background.jpg");
@@ -16,13 +16,13 @@ body{
 }
 
 .nav-link{
-    color: beige;
-    font-family: 'Poppins', sans-serif;
+    color: rgb(230, 207, 140);
+    font-family:'Didot', Serif ;
     font-size: 20px;
     display: flex;
 }
 .nav-link:hover{
-    color: rgb(165, 165, 154);
+    color: rgb(102, 90, 61);
 }
 nav{
     border-radius: 3px;
@@ -38,11 +38,11 @@ form{
 }
 .main{
     text-align: center;
-    color: beige;
+   color: rgb(239, 230, 203);
     padding: 120px;
 }
 .main h1{
-    font-family: 'Playfair Display', serif;
+     font-family:'Didot', Serif ;
     font-size: 50px;
     font-weight: 600;
 }
@@ -51,7 +51,7 @@ form{
     margin: 20px auto;
     font-size: 25px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;   
+    font-family: 'Didot', serif;   
 }
 form.d-flex {
     display: flex;
@@ -71,7 +71,7 @@ form.d-flex {
 .search-bar input {
     flex: 1;
     height: 100%;
-    border: 1px;
+    border: none;
     background: transparent;
     padding: 0 14px;
     color: antiquewhite;
@@ -97,31 +97,13 @@ form.d-flex {
     position: relative;
 }
 
-.cart-wrapper {
-    position: absolute;
-    top: 15px;
-    right: 30px;
-    z-index: 1000;
-}
-
-.cart {
-    width: 50px;
-    display: block;
-    border-radius: 5px;
-}
-.cart:hover{
-    background-color: #343028;
-    color: #fff;
-
-}
-
 .search-bar {
     margin-right: 80px;
 }
 /*Why us*/
 .Why{
     padding: 50px;
-    font-family: 'Playfair Display';
+    font-family: 'Didot', serif;
     color: #b59c64;
     background-color: #faf9f7;
     border-color: #faf9f7;
@@ -141,17 +123,17 @@ border-radius: 16px;
 }
 
 .choose-text h2 {
-    text-align: center;
   margin: 0;
   color: #b59c64;
-  font-family: 'Playfair Display';
+ font-family: 'Didot', serif;
+  text-align: center;
 }
 
 .choose-text p {
-     text-align: center;
   margin-top: 12px;
   line-height: 1.6;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
 }
 
 .design {
@@ -186,21 +168,23 @@ border-radius: 16px;
 .contact {
   max-width: 900px;
   margin: 120px auto;
-  text-align: center;
   font-family: 'Playfair Display', serif;
 }
+
 
 .contact h3 {
   font-size: 36px;
   margin-bottom: 60px;
   font-weight: 400;
+  text-align: center;
+  font-family: 'Didot', serif;
 }
+
 
 .inputs form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px 40px;
-  text-align: left;
+  gap: 45px 80px;
 }
 
 
@@ -212,51 +196,57 @@ border-radius: 16px;
 label {
   display: block;
   font-size: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: #555;
+  letter-spacing: 0.6px;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
 }
+
 
 input[type="text"],
 textarea {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #999;
-  padding: 5px 0;
-  font-size: 16px;
+  border-bottom: 1px solid #8c8c8c;
+  padding: 10px 0;
+  font-size: 17px;
   background: transparent;
   outline: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
 }
 
+
 input::placeholder,
 textarea::placeholder {
-  color: #aaa;
+  color: #9a9a9a;
 }
 
 
 input:focus,
 textarea:focus {
-  border-bottom-color: #010101;
+  border-bottom-color: #b59c64;
 }
+
 
 textarea {
   resize: none;
-  margin-top: 10px;
+  min-height: 140px;
+  margin-top: 8px;
 }
+
 
 .submit {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 input[type="submit"] {
   background: transparent;
   border: 1px solid #b59c64;
   color: #b59c64;
-  padding: 5px 5px;
-  font-size: 14px;
-  letter-spacing: 1px;
+  padding: 16px 38px;
+  font-size: 13px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -267,128 +257,13 @@ input[type="submit"]:hover {
   color: #fff;
 }
 footer{
-    background: #111;
+    background: #434342f9;
     color: #ccc;
     text-align: center;
     padding: 30px 20px;
     font-size: 14px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 @media ( max-width: 780px) {
-    /* ===== NAVBAR ===== */
-
-  .nav-link {
-
-    font-size: 16px;
-
-  }
-
-  .search-bar {
-
-    margin-right: 0;
-
-    width: 100%;
-
-  }
-
-  .cart-wrapper {
-
-    position: static;
-
-    margin-top: 10px;
-
-  }
-
-  /* ===== HERO ===== */
-
-  .main {
-
-    padding: 80px 20px;
-
-  }
-
-  .main h1 {
-
-    font-size: 36px;
-
-  }
-
-  .main p {
-
-    font-size: 18px;
-
-  }
-
-  /* ===== GRIDS (Why / Design) ===== */
-
-  .choose-grid,
-
-  .design {
-
-    grid-template-columns: 1fr;
-
-    border-radius: 0;
-
-  }
-
-  .choose-text h2,
-
-  .design-text h2 {
-
-    font-size: 26px;
-
-  }
-
-  .choose-text p,
-
-  .design-text p {
-
-    font-size: 16px;
-
-    padding: 0 20px;
-
-  }
-
-  /* ===== WHY SECTION ===== */
-
-  .Why {
-
-    padding: 30px 20px;
-
-  }
-
-  /* ===== CONTACT ===== */
-
-  .contact {
-
-    margin: 80px 20px;
-
-  }
-
-  .inputs form {
-
-    grid-template-columns: 1fr;
-
-    gap: 40px;
-
-  }
-
-  input[type="submit"] {
-
-    width: 100%;
-
-    padding: 12px;
-
-  }
-
-  /* ===== FOOTER ===== */
-
-  footer {
-
-    font-size: 13px;
-
-    padding: 25px 15px; 
     
-}
 }
