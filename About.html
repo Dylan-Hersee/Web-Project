@@ -6,37 +6,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="About.css">
+        <link rel="stylesheet" href="Aboutstyle.css">
     </head>
     <body>
         <script src="script.js"></script>
-        <div class="container">
+        <div class="home">
             <!--link to homepage-->
             <nav class="navbar navbar-expand-sm">
   <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="navbar-brand" href="file:///Users/dylanhersee/College%20work/web%20design/Web%20Project/Index.html"><img src="logo.jpg" style="width: 300px;"></a>
+        <a class="navbar-brand" href="file:///Users/dylanhersee/College%20work/web%20design/Web%20Project/Index.html"><img src="logo.jpg" style="width: 300px;" h></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="file:///Users/dylanhersee/College%20work/web%20design/Web%20Project/Services.html" >Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="file:///Users/dylanhersee/College%20work/web%20design/Web%20Project/About.html" class="right">About</a>
+        <a class="nav-link" href="file:///Users/dylanhersee/College%20work/web%20design/Web%20Project/About.html">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="file:///Users/dylanhersee/College%20work/web%20design/Web%20Project/ContactUs.html" class="right">Contact Us </a>
+        <a class="nav-link" href="file:///Users/dylanhersee/College%20work/web%20design/Web%20Project/ContactUs.html">Contact Us </a>
       </li>
     </ul>
-    <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-      </form>
+    <form class="search-bar">
+    <input type="text" placeholder=" Search ">
+    <button type="button"> Search </button>
+</form>
   </div>
 </nav>
-                     </div>
-                </div>
-           </div>
+<div class="container mt-3 button-cont" id="info">
+  <div class="btn-group btn-group-lg">
+    <button type="button" class="btn" id="btn-1" data-bs-toggle="collapse" data-bs-target="#story">Our Story</button>
+    <button type="button" class="btn" id="btn-2" data-bs-toggle="collapse" data-bs-target="#mission">Our Mission</button>
+    <button type="button" class="btn" id="btn-3" data-bs-toggle="collapse" data-bs-target="#people">Our People</button>
+ </div>
+ <div id="story" class="collapse fade-collapse" data-bs-parent="#info">
+    Jo Jo’s Events started with one simple thing: a serious love for planning parties. From organising family celebrations to taking charge of every detail, our founder quickly became the go-to person for making events look amazing and run smoothly. 
+    <br>Before long, that passion turned into helping others plan some of life’s biggest moments — including weddings. Between timelines, table plans, and “don’t forget the flowers,” Jo Jo’s Events was growing. To take things to the next level, our founder completed a floristry course, adding a creative floral touch to every celebration. 
+    <br>Today, Jo Jo’s Events brings together organisation, creativity, and a whole lot of heart to create events that feel effortless, personal, and unforgettable.
+ </div>
+ <div id="mission" class="collapse fade-collapse" data-bs-parent="#info">
+    Our mission is simple: to turn your ideas into unforgettable experiences. We’re here to take the stress off your shoulders and replace it with excitement, creativity, and confidence. 
+    <br>At Jo Jo’s Events, we believe every celebration should feel personal, beautifully styled, and thoughtfully planned — whether it’s an intimate gathering or a once-in-a-lifetime wedding. We handle the details, so you can focus on enjoying every moment.
+ </div>
+ <div id="people" class="collapse fade-collapse" data-bs-parent="#info">
+    <div id="jo">
+        <img src="download.jpeg">
+        <div id="jo-txt">    
+    <h3> Joanne – Founder & Lead Planner</h3>
+    <p> The creative heart behind Jo Jo’s Events. 
+    <br> J has a natural talent for organisation, a passion for beautiful details, and a love for turning ideas into unforgettable celebrations. 
+    <br>From planning timelines to perfecting florals, J makes sure every event runs smoothly and feels truly special.</p>
+    </div>
+    </div>
+    <div id="lee">
+        <img src="download.jpeg">
+         <div id="lee-txt">
+        <h3> L Hersee – Support Team</h3>
+        <p>
+            The calm presence behind the scenes. L supports event setup, coordination, and all those important little details that make a big difference. 
+            <br>Always ready to jump in and help, L helps keep everything on track so events come together effortlessly.
+        </p>
         </div>
-    </body>
+    </div>
+    <div id="ger">
+
+        <img src="download.jpeg">
+         <div id="ger-txt">
+        <h3>G Hersee – Support Team</h3>
+    <p>The extra set of hands and eyes every great event needs. G assists with planning support, setup, and on-the-day logistics, making sure everything is exactly where it should be. 
+    <br>Reliable, helpful, and always ready to support the team when it matters most.
+    </p>
+ </div>
+</div>
+</div>
+</div>
+ <footer> 
+  @Jo Jo's Events Ltd 
+</footer>
+ </body>
 </html>
