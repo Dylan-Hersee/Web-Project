@@ -1,0 +1,246 @@
+/* Contact Us Page*/
+body{
+    background-color: #faf9f7;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar .container-fluid {
+  align-items: center;
+
+}
+.nav-link{
+    font-family: 'Didot', Serif ;
+    font-size: 20px;
+    display: flex;
+    color: #555;
+    border-radius: 3px;
+}
+
+.nav-link:hover{
+    color: rgb(146, 135, 86);
+}
+nav{
+    border-radius: 3px;
+    display: flex;
+}
+
+form{
+    display: flex;
+    align-self: start;
+    margin-top: 10px;
+}
+.main{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.main h1{
+    padding-bottom: 50px;
+    font-family: 'Didot', Serif ;
+    font-size: 30px;
+    color:#555;
+}
+.main p{
+    max-width: 650px;
+    margin: 20px auto;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;   
+}
+form.d-flex {
+    display: flex;
+    align-items: stretch;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 30px;
+    overflow: hidden;           
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgb(185, 162, 130);
+}
+
+.search-bar input {
+    flex: 1;
+    height: 100%;
+    border: 1px;
+    padding: 0 14px;
+    color: rgb(161, 150, 137);
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.search-bar button {
+    height: 100%;
+    border: none;
+    background-color: #c9b27d;
+    padding: 0 22px;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #b59c64;
+    color: #fff;
+}
+.navbar {
+    position: relative;
+}
+
+
+.search-bar {
+    margin-right: 80px;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 30px;
+    overflow: hidden;           
+    background: rgba(255,255,255,0.15);
+    border: 1px solid antiquewhite;
+}
+
+.search-bar input {
+    flex: 1;
+    height: 100%;
+    border: 1px;
+    background: transparent;
+    padding: 0 14px;
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+.search-bar button {
+    height: 100%;
+    border: none;
+    background-color: #c9b27d;
+    padding: 0 22px;
+    color: #222;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #b59c64;
+    color: #fff;
+}
+
+.p-2{
+    background-color: rgb(224, 218, 207);
+    border-radius: 40px;
+    max-width: 900px;
+    margin: 120px auto;
+    margin-top: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.inputs form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 40px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+
+.email, .subject, .submit {
+  grid-column: 1 / -1;
+}
+
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 5px 0;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+#fname{
+    width: 75%;
+}
+#lname{
+    width: 75%;
+}
+#email{
+    width: 50%;
+}
+#subject{
+    width: 100%;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+
+input:focus,
+textarea:focus {
+  border-bottom-color: #010101;
+}
+
+textarea {
+  resize: none;
+  margin-top: 10px;
+}
+
+.submit {
+  text-align: center;
+  margin-top: 40px;
+}
+
+input[type="submit"] {
+  background: transparent;
+  border: 1px solid #b59c64;
+  color: #b59c64;
+  padding: 5px 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #b59c64;
+  color: #fff;
+}
+#soclink img{
+    border-radius: 5px;
+    padding: 30px;
+}
+footer{
+    background: #434342f9;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
