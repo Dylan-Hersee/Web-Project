@@ -157,7 +157,6 @@ form.d-flex {
   grid-column: 1 / -1;
 }
 
-
 label {
   display: block;
   font-size: 14px;
@@ -166,6 +165,16 @@ label {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
 }
 
+input[type="email"],
+textarea {
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 5px 0;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
 input[type="text"],
 textarea {
   border: none;
@@ -175,6 +184,24 @@ textarea {
   background: transparent;
   outline: none;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+}
+
+.inputs input.invalid-input,
+.inputs textarea.invalid-input {
+  border-bottom: 2px solid rgb(236, 117, 117) !important;
+  color: rgb(236, 117, 117);
+}
+
+#thank-you{
+    font-family: 'Didot', Serif ;
+    font-size: 20px;
+    display: flex;
+    color: #555;
+    border-radius: 3px;
+}
+.inputs input.invalid-input::placeholder,
+.inputs textarea.invalid-input::placeholder {
+  color: rgb(236, 117, 117);
 }
 #fname{
     width: 75%;
@@ -208,8 +235,17 @@ textarea {
   text-align: center;
   margin-top: 40px;
 }
+.hidden {
+  display: none;
+}
 
-input[type="submit"] {
+.extra {
+  background-color: #f8f4ef;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+button {
   background: transparent;
   border: 1px solid #b59c64;
   color: #b59c64;
@@ -219,9 +255,10 @@ input[type="submit"] {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  grid-column: 1 / -1;    
 }
 
-input[type="submit"]:hover {
+button:hover {
   background: #b59c64;
   color: #fff;
 }
@@ -237,10 +274,103 @@ footer{
     font-size: 14px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.invalid-label{
+    color: red;
+}
+.invalid-input{
+    border-bottom: 2px red;
+}
 
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
+/* Contact Us Media */
+@media (max-width: 768px) {
+
+  /* Home and navbar  */
+  .home {
     flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar .container-fluid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  /* Search bar  */
+  form.search-bar {
+    width: 90%;
+    margin: 10px auto;
+    flex-direction: column;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* Main  */
+  .main h1 {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .main p {
+    font-size: 18px;
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  /* Form layout adjustments */
+  .inputs form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .inputs input,
+  .inputs textarea {
+    width: 100% !important;
+    font-size: 16px;
+  }
+
+  .submit {
+    margin-top: 20px;
+  }
+
+  /* button size */
+  button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  /* Extra  */
+  .extra {
+    width: 95%;
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  /* Footer  */
+  footer {
+    font-size: 12px;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  /* Social links images*/
+  #soclink img {
+    width: 50px;
+    padding: 15px;
   }
 }
