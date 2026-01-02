@@ -275,9 +275,87 @@ text-align: center;
   transform: translateY(0);
   height: auto;
 }
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
+
+@media (max-width: 768px) {
+
+  /* Navbar  */
+  .navbar .container-fluid {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  form.search-bar {
+    width: 90%;
+    margin: 10px auto;
+    flex-direction: column;
+  }
+
+  .search-bar input,
+  .search-bar button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  /* Main  */
+  .main h1 {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .main p {
+    font-size: 18px;
+    max-width: 95%;
+    margin: 10px auto;
+  }
+
+  /* Container buttons */
+  #btn-1, #btn-2, #btn-3 {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  /* Info  */
+  #info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #story, #mission, #people {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  /*  people */
+  #jo, #lee, #ger {
+    grid-template-columns: 1fr; /* stack image + text vertically */
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #jo img, #lee img, #ger img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #jo-txt, #lee-txt, #ger-txt {
+    text-align: center;
+  }
+
+  /*animation*/
+  .fade-collapse {
+    width: 100%;
+  }
+
+  /* Footer  */
+  footer {
+    font-size: 12px;
+    padding: 20px 10px;
+    text-align: center;
   }
 }
