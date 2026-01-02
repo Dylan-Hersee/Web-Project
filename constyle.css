@@ -21,7 +21,8 @@ body{
 }
 
 .nav-link:hover{
-    color: rgb(146, 135, 86);
+    color: rgb(112, 108, 80);
+
 }
 nav{
     border-radius: 3px;
