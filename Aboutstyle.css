@@ -6,7 +6,7 @@ body{
     flex-direction: column;
 
 }
-
+/*NavBar*/
 .navbar .container-fluid {
   align-items: center;
 
@@ -27,12 +27,13 @@ nav{
     border-radius: 3px;
     display: flex;
 }
-
+/*Form-card*/
 form{
     display: flex;
     align-self: start;
     margin-top: 10px;
 }
+/*Main*/
 .main{
     text-align: center;
     margin-bottom: 50px;
@@ -74,7 +75,7 @@ form.d-flex {
     font-family: 'Poppins', sans-serif;
     outline: none;
 }
-
+/*Search-Bar*/
 .search-bar button {
     height: 100%;
     border: none;
@@ -140,6 +141,7 @@ form.d-flex {
     flex-direction: column;
     padding-bottom: 200px;
 }
+/*Story*/
 #btn-1{
     background-color: rgb(218, 208, 184);
     justify-content: center;
@@ -150,6 +152,7 @@ form.d-flex {
     
    
 }
+/*Mission*/
 #btn-2{
     background-color: rgb(218, 208, 184);
     justify-content: center;
@@ -158,6 +161,7 @@ form.d-flex {
     font-family: 'Didot', serif;
     border-radius: 5px;
 }
+/*People*/
 #btn-3{
    background-color: rgb(218, 208, 184);
     justify-content: center;
@@ -166,6 +170,7 @@ form.d-flex {
     border-radius: 5px;
 
 }
+/*button-hovers*/
 #btn-1:hover{
     background-color: rgb(113, 107, 93);
     color: antiquewhite;
@@ -181,6 +186,7 @@ form.d-flex {
     color: antiquewhite;
      box-shadow: 0 30px 30px rgba(0, 0, 0, 0.15);
 }
+/*Footer*/
 footer{
     background: #434342f9;
     color: #fffdfa;
@@ -206,6 +212,7 @@ footer{
     font-size: large;
 
 }
+/*Dropdown Styles*/
 #people{
     border-radius: 5px;
     margin-top: 20px;
