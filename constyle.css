@@ -7,7 +7,7 @@ body{
     flex-direction: column;
 
 }
-
+/*Navbar*/
 .navbar .container-fluid {
   align-items: center;
 
@@ -28,7 +28,7 @@ nav{
     border-radius: 3px;
     display: flex;
 }
-
+/*Main*/
 form{
     display: flex;
     align-self: start;
@@ -65,7 +65,7 @@ form.d-flex {
     background: rgba(255,255,255,0.15);
     border: 1px solid rgb(185, 162, 130);
 }
-
+/*Search-bar*/
 .search-bar input {
     flex: 1;
     height: 100%;
@@ -135,7 +135,7 @@ form.d-flex {
     background-color: #b59c64;
     color: #fff;
 }
-
+/*Main*/
 .p-2{
     background-color: rgb(224, 218, 207);
     border-radius: 40px;
@@ -144,6 +144,7 @@ form.d-flex {
     margin-top: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
+/*Input*/
 .inputs form {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -192,7 +193,7 @@ textarea {
   border-bottom: 2px solid rgb(236, 117, 117) !important;
   color: rgb(236, 117, 117);
 }
-
+/*valid inputs*/
 #thank-you{
     font-family: 'Didot', Serif ;
     font-size: 20px;
@@ -204,6 +205,7 @@ textarea {
 .inputs textarea.invalid-input::placeholder {
   color: rgb(236, 117, 117);
 }
+/*input widths*/
 #fname{
     width: 75%;
 }
@@ -216,6 +218,7 @@ textarea {
 #subject{
     width: 100%;
 }
+/*Input Styles*/
 input::placeholder,
 textarea::placeholder {
   color: #aaa;
@@ -231,11 +234,12 @@ textarea {
   resize: none;
   margin-top: 10px;
 }
-
+/*Submit button*/
 .submit {
   text-align: center;
   margin-top: 40px;
 }
+/*JS-hidden Details*/
 .hidden {
   display: none;
 }
