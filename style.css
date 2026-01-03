@@ -276,6 +276,13 @@ footer{
     font-size: 14px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*Invalid JS*/
+.invalid-label{
+    color: red;
+}
+.invalid-input{
+    border-bottom: 2px red;
+}
 @media (max-width: 780px) {
 
   /* Home section */
