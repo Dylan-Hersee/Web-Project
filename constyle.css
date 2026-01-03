@@ -249,7 +249,7 @@ textarea {
   padding: 20px;
   border-radius: 10px;
 }
-
+/*Submit Button*/
 button {
   background: transparent;
   border: 1px solid #b59c64;
@@ -267,10 +267,12 @@ button:hover {
   background: #b59c64;
   color: #fff;
 }
+/*Socials links*/
 #soclink img{
     border-radius: 5px;
     padding: 30px;
 }
+/*footer*/
 footer{
     background: #434342f9;
     color: #ccc;
@@ -279,6 +281,7 @@ footer{
     font-size: 14px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+/*InvalidJS*/
 .invalid-label{
     color: red;
 }
