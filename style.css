@@ -4,12 +4,14 @@ body{
 }
 /*Navbar*/
 .home {
+  background-color: rgba(255,0,0,0.3); /* red overlay for testing */
   background-image: url("https://dylan-hersee.github.io/Web-Project/Web%20Page%20background.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 .navbar .container-fluid {
   align-items: center;
