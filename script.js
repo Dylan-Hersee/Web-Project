@@ -1,34 +1,34 @@
+//Contact us Info//
 function Submit() {
   event.preventDefault(); 
 
   let valid = true;
 
-  // Get inputs
+  //Variables for ids//
   const fname = document.getElementById("fname");
   const lname = document.getElementById("lname");
   const email = document.getElementById("email");
   const subject = document.getElementById("subject");
   const form = document.getElementById("jscontact");
-
-  // Get labels
+  // Variables for class//
   const fnameLabel = document.querySelector("label[for='fname']");
   const lnameLabel = document.querySelector("label[for='lname']");
   const emailLabel = document.querySelector("label[for='email']");
   const subjectLabel = document.querySelector("label[for='subject']");
 
-  // Helper function
+  //Adding in new classes for CSS while false//
   function markInvalid(input, label) {
     input.classList.add("invalid-input");
     label.classList.add("invalid-label");
     valid = false;
   }
-
+//Removing when True//
   function clearInvalid(input, label) {
     input.classList.remove("invalid-input");
     label.classList.remove("invalid-label");
   }
 
-  // First name
+  // First name//
     if(fname.value.trim() === ""){ 
         markInvalid(fname, fnameLabel)
         alert("invalid first name")
@@ -40,7 +40,7 @@ function Submit() {
       clearInvalid(fname, fnameLabel)
     }
 
-  // Last name
+  // Last name//
      if(lname.value.trim() === ""){ 
        markInvalid(lname, lnameLabel)
         alert("Invalid last name")
@@ -49,7 +49,7 @@ function Submit() {
     else{
       clearInvalid(lname, lnameLabel);
     }
-  // Email
+  // Email//
   
 if (!email.value.includes("@") || !email.value.includes(".")) {
   markInvalid(email, emailLabel)
@@ -60,7 +60,7 @@ if (!email.value.includes("@") || !email.value.includes(".")) {
    clearInvalid(email, emailLabel);
   }
 
-  // Subject
+  // Subject//
   if(subject.value.trim() === ""){
      markInvalid(subject, subjectLabel)
      alert("Please leave a Comment")
@@ -74,20 +74,25 @@ if (!email.value.includes("@") || !email.value.includes(".")) {
   form.reset();
   }
 }
+//Services Cards//
 function Floral(){
+  //Removing button//
   document.getElementById("button-2").style.display='none';
+  //Showing hidden text//
   const extra = document.querySelector(".floral")
 extra.classList.remove("hidden");
 
 }
+ //Event Card//
 function Events(){
   document.getElementById("read").style.display='none';
   const events = document.querySelector(".events")
 events.classList.remove("hidden");
 
 }
-
+ //Removing button//
 const toggle = document.getElementById('nav-toggle');
+//Showing hidden text//
 const links = document.getElementById('nav-links');
 
 toggle.addEventListener('click', () => {
